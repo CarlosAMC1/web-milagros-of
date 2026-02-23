@@ -1,32 +1,32 @@
-// app/page.tsx
-import Navbar from '../components/NavBar';
-import HeroBanner from '../components/HeroBanner';
-import ProductCard from '../components/ProductCard';
-import Mapa from '../components/Mapa';
-import Footer from '../components/Footer';
-import WhatsAppButton from '../components/WhatsAppButton';
-import productos from '../data/productos.json';
+import HeroBanner from "@/components/ui/HeroBanner";
+import CategoriasHome from "@/components/ui/CategoriasHome";
+import ProductosDestacados from "@/components/ui/ProductosDestacados";
+import Testimonios from "@/components/ui/Testimonios";
+import Mapa from "@/components/ui/Mapa";
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
 
-import Testimonios from '../components/Testimonios';
 export default function Home() {
   return (
-    <main>
-      <Navbar />
+    <main className="flex flex-col gap-24 pb-32">
       <HeroBanner />
 
-      <section className="max-w-6xl mx-auto px-4 py-8">
-        <h2 className="text-2xl font-bold mb-6 text-gray-800">Nuestros productos</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {productos.map((producto) => (
-            <ProductCard key={producto.id} producto={producto} />
-          ))}
-        </div>
+      <section className="container mx-auto px-4">
+        <CategoriasHome />
       </section>
 
-      <Mapa />
-         <Testimonios />
-      <Footer />
-         <WhatsAppButton />
+      <section className="container mx-auto px-4">
+        <ProductosDestacados />
+      </section>
+
+      <section className="container mx-auto px-4">
+        <Testimonios />
+      </section>
+
+      <section className="container mx-auto px-4">
+        <Mapa />
+      </section>
+
+      <WhatsAppButton />
     </main>
   );
 }
