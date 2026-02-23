@@ -28,11 +28,19 @@ export const metadata: Metadata = {
   }
 };
 
+import Navbar from "@/components/layouts/NavBar";
+import Footer from "@/components/layouts/Footer";
+import { Providers } from "./Providers";
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es">
-      <body className="bg-white text-neutral-900 antialiased">
-        {children}
+      <body className="bg-[#050510] text-white antialiased">
+        <Providers>
+          <Navbar />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
