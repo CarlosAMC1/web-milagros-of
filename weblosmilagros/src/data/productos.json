@@ -1,4 +1,3 @@
-
 [
   {
     "id": 1,
@@ -7,24 +6,19 @@
     "imagen": "/productos/cafe.jpg",
     "categoria": "Bebidas",
     "descuento": 10,
-    "stock": 15
-    },
-
-
-
-  {    "id": 2,
+    "stock": 15,
+    "descripcion": "Café tostado de grano premium, aroma intenso y sabor equilibrado. Ideal para tus mañanas."
+  },
+  {
+    "id": 2,
     "nombre": "Café Premium",
     "precio": 24.9,
     "imagen": "/productos/cafe.jpg",
     "categoria": "Bebidas",
     "descuento": 10,
-    "stock": 15
-},
-
-  
-
-
-
+    "stock": 15,
+    "descripcion": "Café tostado de grano premium, aroma intenso y sabor equilibrado. Ideal para tus mañanas."
+  },
   {
     "id": 3,
     "nombre": "Café Premium",
@@ -32,11 +26,9 @@
     "imagen": "/productos/cafe.jpg",
     "categoria": "Bebidas",
     "descuento": 10,
-    "stock": 15
+    "stock": 15,
+    "descripcion": "Café tostado de grano premium, aroma intenso y sabor equilibrado. Ideal para tus mañanas."
   },
-
-
-
   {
     "id": 4,
     "nombre": "Café Premium",
@@ -44,11 +36,9 @@
     "imagen": "/productos/cafe.jpg",
     "categoria": "Bebidas",
     "descuento": 10,
-    "stock": 15
+    "stock": 15,
+    "descripcion": "Café tostado de grano premium, aroma intenso y sabor equilibrado. Ideal para tus mañanas."
   },
-
-
-
   {
     "id": 5,
     "nombre": "Café Premium",
@@ -56,6 +46,7 @@
     "imagen": "/productos/cafe.jpg",
     "categoria": "Bebidas",
     "descuento": 10,
-    "stock": 15
+    "stock": 15,
+    "descripcion": "Café tostado de grano premium, aroma intenso y sabor equilibrado. Ideal para tus mañanas."
   }
 ]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nombre": "Bebidas",
+    "imagen": "/categorias/bebidas.jpg",
+    "slug": "bebidas"
+  },
+  {
+    "id": 2,
+    "nombre": "Abarrotes",
+    "imagen": "/categorias/abarrotes.jpg",
+    "slug": "abarrotes"
+  },
+  {
+    "id": 3,
+    "nombre": "Limpieza",
+    "imagen": "/categorias/limpieza.jpg",
+    "slug": "limpieza"
+  },
+  {
+    "id": 4,
+    "nombre": "Snacks",
+    "imagen": "/categorias/snacks.jpg",
+    "slug": "snacks"
+  }
+]

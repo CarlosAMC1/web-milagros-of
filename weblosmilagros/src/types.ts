@@ -7,11 +7,12 @@ export interface Producto { // 👈 Nombre en español
   categoria: string;
   descuento?: number;
   stock?: number;
+  descripcion?: string;
 }
 
 // Tipos para las props de los componentes (opcional)
 export interface ProductCardProps {
-    producto: Producto;
+  producto: Producto;
 }
 
 // Tipos para la lista de productos (opcional)
