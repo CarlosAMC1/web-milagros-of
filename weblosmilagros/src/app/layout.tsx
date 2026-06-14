@@ -1,6 +1,17 @@
 import type { Metadata } from "next";
+import { Outfit, Inter } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/config/site";
+
+const outfit = Outfit({ 
+  subsets: ["latin"],
+  variable: '--font-outfit',
+});
+
+const inter = Inter({ 
+  subsets: ["latin"],
+  variable: '--font-inter',
+});
 
 export const metadata: Metadata = {
   title: siteConfig.name,
@@ -34,8 +45,8 @@ import { Providers } from "./Providers";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es">
-      <body className="bg-[#050510] text-white antialiased">
+    <html lang="es" className={`${outfit.variable} ${inter.variable}`}>
+      <body className="bg-[var(--background)] text-[var(--foreground)] antialiased font-sans selection:bg-[var(--primary)] selection:text-white">
         <Providers>
           <Navbar />
           {children}

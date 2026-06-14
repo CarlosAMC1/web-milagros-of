@@ -1,15 +1,15 @@
 [
   {
     "id": 1,
-    "nombre": "Bebidas",
-    "imagen": "/categorias/bebidas.jpg",
-    "slug": "bebidas"
-  },
-  {
-    "id": 2,
     "nombre": "Abarrotes",
     "imagen": "/categorias/abarrotes.jpg",
     "slug": "abarrotes"
+  },
+  {
+    "id": 2,
+    "nombre": "Bebidas",
+    "imagen": "/categorias/bebidas.jpg",
+    "slug": "bebidas"
   },
   {
     "id": 3,
@@ -22,5 +22,17 @@
     "nombre": "Snacks",
     "imagen": "/categorias/snacks.jpg",
     "slug": "snacks"
+  },
+  {
+    "id": 5,
+    "nombre": "Lácteos",
+    "imagen": "/categorias/lacteos.jpg",
+    "slug": "lacteos"
+  },
+  {
+    "id": 6,
+    "nombre": "Cuidado Personal",
+    "imagen": "/categorias/cuidado-personal.jpg",
+    "slug": "cuidado-personal"
   }
 ]

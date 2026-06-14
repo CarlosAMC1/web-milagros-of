@@ -8,52 +8,53 @@ import categorias from "@/data/categorias.json";
 
 const CategoriasHome: React.FC = () => {
     return (
-        <section className="py-12">
-            <div className="flex flex-col items-center mb-12">
-                <motion.h2
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    className="text-4xl font-bold text-gray-900 dark:text-white mb-4"
-                >
-                    Nuestras Categorías
-                </motion.h2>
-                <div className="w-20 h-1 bg-[var(--secondary)] rounded-full" />
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                {categorias.map((categoria, index) => (
-                    <motion.div
-                        key={categoria.id}
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ delay: index * 0.1 }}
-                    >
-                        <Link
-                            href={`/productos?categoria=${categoria.slug}`}
-                            className="group relative block aspect-[4/3] rounded-2xl overflow-hidden bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 shadow-sm hover:shadow-xl transition-all duration-500"
+        <section className="py-16 bg-white border-b border-gray-100">
+            <div className="container mx-auto px-4">
+                <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
+                    <div>
+                        <motion.h2
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            className="text-3xl font-black text-gray-900 mb-2 font-outfit"
                         >
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10" />
+                            Explora por Categorías
+                        </motion.h2>
+                        <div className="w-16 h-1.5 bg-[var(--secondary)] rounded-full" />
+                    </div>
+                </div>
 
-                            <Image
-                                src={categoria.imagen || "/placeholder-category.jpg"}
-                                alt={categoria.nombre}
-                                fill
-                                className="object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-100"
-                            />
-
-                            <div className="absolute inset-0 z-20 flex flex-col items-center justify-end p-6">
-                                <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-[var(--secondary)] transition-colors">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                    {categorias.map((categoria, index) => (
+                        <motion.div
+                            key={categoria.id}
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ delay: index * 0.05 }}
+                        >
+                            <Link
+                                href={`/productos?categoria=${categoria.slug}`}
+                                className="group flex flex-col items-center p-4 bg-gray-50 border border-gray-100 rounded-2xl hover:bg-[var(--primary)] hover:border-[var(--primary)] transition-colors duration-300 shadow-sm hover:shadow-md"
+                            >
+                                <div className="w-16 h-16 relative mb-3 bg-white rounded-full p-2 shadow-sm group-hover:scale-110 transition-transform">
+                                    <Image
+                                        src={categoria.imagen || "/placeholder-category.jpg"}
+                                        alt={categoria.nombre}
+                                        fill
+                                        className="object-cover rounded-full"
+                                        onError={(e) => {
+                                            const target = e.target as HTMLImageElement;
+                                            target.style.display = 'none';
+                                            target.parentElement!.innerHTML = '<span class="text-3xl flex items-center justify-center h-full">🛒</span>';
+                                        }}
+                                    />
+                                </div>
+                                <h3 className="text-sm font-bold text-gray-800 text-center group-hover:text-white transition-colors">
                                     {categoria.nombre}
                                 </h3>
-                                <span className="text-sm text-gray-300 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                                    Ver productos →
-                                </span>
-                            </div>
-
-                            <div className="absolute inset-0 border-2 border-transparent group-hover:border-[var(--primary)] rounded-2xl transition-all duration-500 z-30" />
-                        </Link>
-                    </motion.div>
-                ))}
+                            </Link>
+                        </motion.div>
+                    ))}
+                </div>
             </div>
         </section>
     );

@@ -18,13 +18,13 @@ const Button: React.FC<ButtonProps> = ({
     className = "",
     ...props
 }) => {
-    const baseStyles = "relative inline-flex items-center justify-center font-medium transition-all duration-300 rounded-xl focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed overflow-hidden group";
+    const baseStyles = "relative inline-flex items-center justify-center font-bold transition-all duration-300 rounded-xl focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed overflow-hidden group font-sans";
 
     const variants = {
-        primary: "bg-blue-600 text-white hover:bg-blue-700 shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_25px_rgba(37,99,235,0.5)]",
-        secondary: "bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20",
-        outline: "border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white",
-        ghost: "bg-transparent text-gray-300 hover:bg-white/10 hover:text-white",
+        primary: "bg-[var(--primary)] text-white hover:opacity-90 shadow-lg shadow-[var(--primary)]/20",
+        secondary: "bg-[var(--secondary)] text-[var(--primary)] hover:opacity-90 shadow-md",
+        outline: "border-2 border-[var(--primary)] text-[var(--primary)] hover:bg-[var(--primary)] hover:text-white",
+        ghost: "bg-transparent text-gray-600 hover:bg-gray-100 hover:text-[var(--primary)]",
     };
 
     const sizes = {

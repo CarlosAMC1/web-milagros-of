@@ -1,52 +1,122 @@
 [
   {
     "id": 1,
-    "nombre": "Café Premium",
-    "precio": 24.9,
-    "imagen": "/productos/cafe.jpg",
-    "categoria": "Bebidas",
-    "descuento": 10,
-    "stock": 15,
-    "descripcion": "Café tostado de grano premium, aroma intenso y sabor equilibrado. Ideal para tus mañanas."
+    "nombre": "Arroz Costeño Extra 5kg",
+    "precio": 22.5,
+    "imagen": "/productos/arroz-costeno.jpg",
+    "categoria": "Abarrotes",
+    "descuento": 0,
+    "stock": 20,
+    "descripcion": "Arroz extra Costeño rinde más y es más graneadito. Saco de 5kg ideal para la familia."
   },
   {
     "id": 2,
-    "nombre": "Café Premium",
-    "precio": 24.9,
-    "imagen": "/productos/cafe.jpg",
-    "categoria": "Bebidas",
-    "descuento": 10,
-    "stock": 15,
-    "descripcion": "Café tostado de grano premium, aroma intenso y sabor equilibrado. Ideal para tus mañanas."
+    "nombre": "Aceite Vegetal Primor Premium 1L",
+    "precio": 9.5,
+    "imagen": "/productos/aceite-primor.jpg",
+    "categoria": "Abarrotes",
+    "descuento": 5,
+    "stock": 35,
+    "descripcion": "Aceite 100% vegetal Primor Premium. Cuida el corazón de tu familia."
   },
   {
     "id": 3,
-    "nombre": "Café Premium",
-    "precio": 24.9,
-    "imagen": "/productos/cafe.jpg",
-    "categoria": "Bebidas",
-    "descuento": 10,
-    "stock": 15,
-    "descripcion": "Café tostado de grano premium, aroma intenso y sabor equilibrado. Ideal para tus mañanas."
+    "nombre": "Leche Evaporada Gloria Tarro 400g",
+    "precio": 3.8,
+    "imagen": "/productos/leche-gloria.jpg",
+    "categoria": "Lácteos",
+    "descuento": 0,
+    "stock": 50,
+    "descripcion": "Leche evaporada entera Gloria, enriquecida con vitaminas A y D."
   },
   {
     "id": 4,
-    "nombre": "Café Premium",
-    "precio": 24.9,
-    "imagen": "/productos/cafe.jpg",
+    "nombre": "Inca Kola 1.5L",
+    "precio": 6.0,
+    "imagen": "/productos/inca-kola.jpg",
     "categoria": "Bebidas",
     "descuento": 10,
-    "stock": 15,
-    "descripcion": "Café tostado de grano premium, aroma intenso y sabor equilibrado. Ideal para tus mañanas."
+    "stock": 24,
+    "descripcion": "La bebida de sabor nacional. Inca Kola en presentación familiar."
   },
   {
     "id": 5,
-    "nombre": "Café Premium",
-    "precio": 24.9,
-    "imagen": "/productos/cafe.jpg",
+    "nombre": "Galletas Oreo Clásicas",
+    "precio": 1.2,
+    "imagen": "/productos/oreo.jpg",
+    "categoria": "Snacks",
+    "descuento": 0,
+    "stock": 40,
+    "descripcion": "Galletas de chocolate rellenas con crema de vainilla."
+  },
+  {
+    "id": 6,
+    "nombre": "Detergente Bolívar Matic 1.2kg",
+    "precio": 14.9,
+    "imagen": "/productos/detergente-bolivar.jpg",
+    "categoria": "Limpieza",
+    "descuento": 15,
+    "stock": 10,
+    "descripcion": "Detergente Bolívar ideal para lavadoras. Cuida tu ropa y quita manchas."
+  },
+  {
+    "id": 7,
+    "nombre": "Café Altomayo Clásico 200g",
+    "precio": 15.5,
+    "imagen": "/productos/cafe-altomayo.jpg",
+    "categoria": "Abarrotes",
+    "descuento": 0,
+    "stock": 18,
+    "descripcion": "El sabor natural del café. Altomayo clásico para empezar bien el día."
+  },
+  {
+    "id": 8,
+    "nombre": "Agua San Luis Sin Gas 2.5L",
+    "precio": 3.0,
+    "imagen": "/productos/agua-san-luis.jpg",
     "categoria": "Bebidas",
+    "descuento": 0,
+    "stock": 30,
+    "descripcion": "Agua de mesa sin gas San Luis. Hidratación pura."
+  },
+  {
+    "id": 9,
+    "nombre": "Fideos Don Vittorio Espagueti 500g",
+    "precio": 2.8,
+    "imagen": "/productos/fideos-don-vittorio.jpg",
+    "categoria": "Abarrotes",
+    "descuento": 0,
+    "stock": 45,
+    "descripcion": "Fideos Don Vittorio, fideos sueltitos y que no se pegan."
+  },
+  {
+    "id": 10,
+    "nombre": "Jabón de Tocador Bolívar (Pack 3)",
+    "precio": 5.5,
+    "imagen": "/productos/jabon-bolivar.jpg",
+    "categoria": "Cuidado Personal",
+    "descuento": 0,
+    "stock": 25,
+    "descripcion": "Jabón Bolívar cuidado profundo, aroma floral."
+  },
+  {
+    "id": 11,
+    "nombre": "Atún Florida en Aceite 170g",
+    "precio": 5.9,
+    "imagen": "/productos/atun-florida.jpg",
+    "categoria": "Abarrotes",
     "descuento": 10,
-    "stock": 15,
-    "descripcion": "Café tostado de grano premium, aroma intenso y sabor equilibrado. Ideal para tus mañanas."
+    "stock": 30,
+    "descripcion": "Lomitos de atún Florida en aceite vegetal. Excelente calidad."
+  },
+  {
+    "id": 12,
+    "nombre": "Coca-Cola 2.25L",
+    "precio": 8.0,
+    "imagen": "/productos/coca-cola.jpg",
+    "categoria": "Bebidas",
+    "descuento": 0,
+    "stock": 20,
+    "descripcion": "Disfruta del sabor clásico de Coca-Cola. Tamaño ideal para compartir."
   }
 ]
