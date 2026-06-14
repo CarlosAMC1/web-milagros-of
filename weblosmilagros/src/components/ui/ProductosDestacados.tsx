@@ -18,11 +18,11 @@ const ProductosDestacados: React.FC = () => {
                     <motion.h2
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        className="text-4xl font-bold text-white mb-4"
+                        className="text-4xl font-bold text-gray-900 dark:text-white mb-4"
                     >
                         Productos Destacados
                     </motion.h2>
-                    <div className="w-20 h-1 bg-blue-600 rounded-full" />
+                    <div className="w-20 h-1 bg-[var(--secondary)] rounded-full" />
                 </div>
 
                 <Link href="/productos">

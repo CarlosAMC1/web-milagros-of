@@ -19,9 +19,9 @@ export default function Testimonios() {
   }, []);
 
   return (
-    <section id="testimonios" className="bg-gray-50 py-16 px-4">
+    <section id="testimonios" className="bg-white dark:bg-gray-900 py-16 px-4">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12">
           Lo que dicen nuestros clientes
         </h2>
 
@@ -32,7 +32,7 @@ export default function Testimonios() {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: index * 0.2 }}
-              className="bg-white p-6 rounded-xl shadow hover:shadow-md transition-all"
+              className="bg-gray-50 dark:bg-gray-800 p-6 rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 dark:border-gray-700 transition-all"
             >
               <img
                 src={t.foto}
@@ -43,7 +43,7 @@ export default function Testimonios() {
                 }}
               />
               <p className="text-gray-600 italic mb-3">“{t.mensaje}”</p>
-              <h4 className="text-emerald-600 font-semibold">{t.nombre}</h4>
+              <h4 className="text-[var(--primary)] font-semibold">{t.nombre}</h4>
             </motion.div>
           ))}
         </div>

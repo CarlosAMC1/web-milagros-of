@@ -7,9 +7,10 @@
 :root {
   --black: #000000;
   --white: #FFFFFF;
-  --primary: #00FFA3;  /* Verde neón */
-  --secondary: #00C2FF; /* Azul eléctrico */
+  --primary: #5C2A85;  /* Morado Nazareno */
+  --secondary: #D4AF37; /* Dorado */
   --gray: #1A1A1A;     /* Gris oscuro */
+  --gray-light: #F9FAFB; /* Gris claro para fondos */
 }
 
 @theme inline {

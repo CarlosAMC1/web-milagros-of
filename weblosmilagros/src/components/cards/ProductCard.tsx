@@ -20,7 +20,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ producto }) => {
   return (
     <motion.div
       whileHover={{ y: -10 }}
-      className="group bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl overflow-hidden hover:border-blue-500/50 transition-all duration-300 shadow-xl"
+      className="group bg-white dark:bg-white/5 backdrop-blur-lg border border-gray-200 dark:border-white/10 rounded-2xl overflow-hidden hover:border-[var(--primary)] transition-all duration-300 shadow-sm hover:shadow-xl"
     >
       <Link href={`/productos/${producto.id}`} className="block relative aspect-square overflow-hidden">
         {hasDiscount && (
@@ -41,7 +41,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ producto }) => {
 
       <div className="p-5">
         <div className="flex justify-between items-start mb-2">
-          <span className="text-xs font-medium text-blue-400 uppercase tracking-wider">
+          <span className="text-xs font-medium text-[var(--primary)] uppercase tracking-wider">
             {producto.categoria}
           </span>
           <span className={`text-xs ${producto.stock && producto.stock > 0 ? 'text-green-400' : 'text-red-400'}`}>
@@ -50,13 +50,13 @@ const ProductCard: React.FC<ProductCardProps> = ({ producto }) => {
         </div>
 
         <Link href={`/productos/${producto.id}`}>
-          <h3 className="text-lg font-bold text-white mb-3 line-clamp-1 group-hover:text-blue-400 transition-colors">
+          <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3 line-clamp-1 group-hover:text-[var(--primary)] transition-colors">
             {producto.nombre}
           </h3>
         </Link>
 
         <div className="flex items-center gap-3">
-          <span className="text-xl font-bold text-white">
+          <span className="text-xl font-bold text-gray-900 dark:text-white">
             {formatPrice(finalPrice)}
           </span>
           {hasDiscount && (
@@ -67,10 +67,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ producto }) => {
         </div>
 
         <div className="mt-4 flex gap-2">
-          <button className="flex-1 bg-white/10 hover:bg-white/20 text-white text-sm font-medium py-2 rounded-xl transition-colors">
+          <button className="flex-1 bg-gray-100 hover:bg-gray-200 dark:bg-white/10 dark:hover:bg-white/20 text-gray-900 dark:text-white text-sm font-medium py-2 rounded-xl transition-colors">
             Detalles
           </button>
-          <button className="w-10 h-10 flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white rounded-xl transition-colors shadow-lg shadow-blue-600/20">
+          <button className="w-10 h-10 flex items-center justify-center bg-[var(--primary)] hover:opacity-90 text-white rounded-xl transition-colors shadow-lg shadow-[var(--primary)]/20">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
             </svg>

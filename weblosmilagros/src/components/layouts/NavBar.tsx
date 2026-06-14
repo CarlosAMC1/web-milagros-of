@@ -41,12 +41,12 @@ export default function Navbar() {
       >
         <div className="container mx-auto px-6 flex justify-between items-center">
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform">
+            <div className="w-10 h-10 bg-[var(--primary)] rounded-xl flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform text-[var(--secondary)]">
               M
             </div>
             <div className="flex flex-col leading-none">
               <span className="text-xl font-black tracking-tighter text-white">BODEGUITA</span>
-              <span className="text-[10px] font-bold text-blue-400 tracking-[0.2em]">LOS MILAGROS</span>
+              <span className="text-[10px] font-bold text-[var(--secondary)] tracking-[0.2em]">LOS MILAGROS</span>
             </div>
           </Link>
 
@@ -56,7 +56,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`text-xs font-bold tracking-widest transition-all hover:text-blue-400 ${pathname === link.href ? 'text-blue-400' : 'text-gray-300'
+                className={`text-xs font-bold tracking-widest transition-all hover:text-[var(--secondary)] ${pathname === link.href ? 'text-[var(--secondary)]' : 'text-gray-300'
                   }`}
               >
                 {link.name}
@@ -74,7 +74,7 @@ export default function Navbar() {
             </Link>
             <button className="relative text-gray-300 hover:text-white transition-colors">
               <FiShoppingBag size={20} />
-              <span className="absolute -top-2 -right-2 w-4 h-4 bg-blue-600 text-[10px] font-bold rounded-full flex items-center justify-center text-white">
+              <span className="absolute -top-2 -right-2 w-4 h-4 bg-[var(--primary)] text-[10px] font-bold rounded-full flex items-center justify-center text-[var(--secondary)]">
                 0
               </span>
             </button>
@@ -101,7 +101,7 @@ export default function Navbar() {
           >
             <div className="flex justify-between items-center mb-16">
               <div className="flex items-center gap-2">
-                <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center font-bold text-xl">M</div>
+                <div className="w-10 h-10 bg-[var(--primary)] rounded-xl flex items-center justify-center font-bold text-xl text-[var(--secondary)]">M</div>
                 <span className="font-bold text-white uppercase tracking-widest">Milagros</span>
               </div>
               <button
@@ -123,7 +123,7 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     onClick={() => setMenuOpen(false)}
-                    className="text-4xl font-bold text-white hover:text-blue-500 transition-colors"
+                    className="text-4xl font-bold text-white hover:text-[var(--secondary)] transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -136,7 +136,7 @@ export default function Navbar() {
                 <Link href="/login" className="flex-1 bg-white/5 border border-white/10 py-4 rounded-2xl text-center font-bold text-white hover:bg-white/10 transition-all">
                   ADMIN
                 </Link>
-                <Link href="/contacto" className="flex-1 bg-blue-600 py-4 rounded-2xl text-center font-bold text-white hover:bg-blue-700 transition-all shadow-lg shadow-blue-600/20">
+                <Link href="/contacto" className="flex-1 bg-[var(--primary)] py-4 rounded-2xl text-center font-bold text-[var(--secondary)] hover:opacity-90 transition-all shadow-lg shadow-[var(--primary)]/20">
                   PEDIDOS
                 </Link>
               </div>

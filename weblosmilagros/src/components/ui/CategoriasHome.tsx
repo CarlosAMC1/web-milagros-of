@@ -13,11 +13,11 @@ const CategoriasHome: React.FC = () => {
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    className="text-4xl font-bold text-white mb-4"
+                    className="text-4xl font-bold text-gray-900 dark:text-white mb-4"
                 >
                     Nuestras Categorías
                 </motion.h2>
-                <div className="w-20 h-1 bg-blue-600 rounded-full" />
+                <div className="w-20 h-1 bg-[var(--secondary)] rounded-full" />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -30,7 +30,7 @@ const CategoriasHome: React.FC = () => {
                     >
                         <Link
                             href={`/productos?categoria=${categoria.slug}`}
-                            className="group relative block aspect-[4/3] rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:border-white/20 transition-all duration-500"
+                            className="group relative block aspect-[4/3] rounded-2xl overflow-hidden bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 shadow-sm hover:shadow-xl transition-all duration-500"
                         >
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10" />
 
@@ -42,7 +42,7 @@ const CategoriasHome: React.FC = () => {
                             />
 
                             <div className="absolute inset-0 z-20 flex flex-col items-center justify-end p-6">
-                                <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                                <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-[var(--secondary)] transition-colors">
                                     {categoria.nombre}
                                 </h3>
                                 <span className="text-sm text-gray-300 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
@@ -50,7 +50,7 @@ const CategoriasHome: React.FC = () => {
                                 </span>
                             </div>
 
-                            <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-500/50 rounded-2xl transition-all duration-500 z-30" />
+                            <div className="absolute inset-0 border-2 border-transparent group-hover:border-[var(--primary)] rounded-2xl transition-all duration-500 z-30" />
                         </Link>
                     </motion.div>
                 ))}

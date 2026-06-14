@@ -18,7 +18,7 @@ export default function HeroBanner() {
       </video>
 
       {/* Overlay de gradiente */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/30 z-0" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[var(--primary)]/90 via-[var(--primary)]/70 to-black/50 z-0" />
 
       {/* Contenido principal */}
       <div className="relative z-10 flex items-center justify-center h-full px-6">
@@ -28,11 +28,11 @@ export default function HeroBanner() {
           transition={{ duration: 1 }}
           className="text-center max-w-3xl"
         >
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-600 animate-pulse">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-white to-[var(--secondary)] animate-pulse">
             Bodeguita Los Milagros
           </h1>
 
-          <p className="mt-6 text-xl md:text-2xl text-gray-200">
+          <p className="mt-6 text-xl md:text-2xl text-gray-100">
             Los mejores productos a precios increíbles directamente a tu hogar
           </p>
 
@@ -40,7 +40,7 @@ export default function HeroBanner() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold flex items-center gap-2 shadow-md hover:shadow-lg transition-all"
+              className="px-8 py-4 bg-[var(--secondary)] hover:opacity-90 text-black rounded-xl font-bold flex items-center gap-2 shadow-md hover:shadow-lg transition-all"
             >
               Ver catálogo
               <FiArrowRight className="animate-pulse" />
@@ -49,7 +49,7 @@ export default function HeroBanner() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-xl font-bold hover:bg-white hover:text-black transition-all shadow-md"
+              className="px-8 py-4 bg-transparent border-2 border-[var(--secondary)] text-[var(--secondary)] rounded-xl font-bold hover:bg-[var(--secondary)] hover:text-black transition-all shadow-md"
             >
               Haz tu pedido
             </motion.button>
